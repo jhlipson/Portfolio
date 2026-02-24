@@ -49,51 +49,50 @@
     margin-top: 1rem;
 }
 
-.project-card {
-    background: #fff;
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+/* Tile Link */
+.project-tile {
+    position: relative;
+    display: block;
+    overflow: hidden;
     border-radius: 8px;
-    padding: 1rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-    display: flex;
-    flex-direction: column;
+    aspect-ratio: 16 / 9;
+    text-decoration: none;
 }
 
-.project-card img {
+/* Video */
+.project-tile video {
     width: 100%;
-    height: 150px;
+    height: 100%;
     object-fit: cover;
-    border-radius: 6px;
-    margin-bottom: 0.75rem;
+    transition: transform 0.4s ease;
 }
 
-.project-card h3 {
-    margin: 0.25rem 0;
-    font-size: 1.1rem;
-}
-
-.project-card h3 span {
-    font-weight: normal;
+/* Title Overlay */
+.project-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.6rem;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    color: white;
     font-size: 0.9rem;
-    color: #666;
+    font-weight: 500;
 }
 
-.video-placeholder {
-    width: 100%;
-    height: 160px;
-    background: #ddd;
-    border-radius: 6px;
-    margin: 0.75rem 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #666;
-    font-size: 0.9rem;
+/* Hover Effect */
+.project-tile:hover video {
+    transform: scale(1.05);
 }
 
-.project-card p {
-    font-size: 0.95rem;
-    margin-top: auto;
-}
 
 /* Video background */
 .video-background {
