@@ -224,5 +224,43 @@ header {
     margin-right: auto;
 }
 
+.video-background video {
+    position: absolute;
+    color: gray;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+       background: rgba(128, 128, 128, 1);
+}
+
+
+.video-background {
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    overflow: hidden;
+    color: gray;
+}
+
+.video-background video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(128, 128, 128, 0.80);
+    object-fit: cover;
+      color: gray;
+}
+
+.video-background::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(128, 128, 128, 1);
+    pointer-events: none;
+}
 
 
