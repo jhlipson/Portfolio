@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feel No Evil | Prototype</title>
+
+<style>
+
+/* ===== Base Reset ===== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #111;
+    color: #f5f5f5;
+    line-height: 1.6;
+}
+
+/* ===== Layout Container ===== */
+.project-page {
+    max-width: 1100px;
+    margin: auto;
+    padding: 2rem 1.5rem 4rem;
+}
+
+/* ===== Hero Section ===== */
+.project-hero {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.project-hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.project-hero video {
+    width: 100%;
+    max-height: 550px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+/* ===== Role Section ===== */
+.project-role {
+    background: #1c1c1c;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.project-role h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    color: #ffffff;
+}
+
+.project-role ul {
+    padding-left: 1.2rem;
+}
+
+.project-role li {
+    margin-bottom: 0.5rem;
+}
+
+/* ===== Description ===== */
+.project-description {
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 12px;
+    font-size: 1.05rem;
+    color: #ddd;
+}
+
+/* ===== Subtle Hover Effect on Video ===== */
+.project-hero video:hover {
+    transform: scale(1.01);
+    transition: 0.4s ease;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .project-hero h1 {
+        font-size: 2rem;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="project-page">
+
+ 
+    <section class="project-hero">
+        <a href="index.html">
+        <h1>Feel No Evil – Prototype</h1>
+        </a>
+        <video autoplay muted loop playsinline>
+            <source src="videos/Feel No Evil Promo.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    
+    <section class="project-role">
+        <h3>Role: Programming Lead</h3>
+        <ul>
+            <li>Character movement systems</li>
+            <li>Modular weapon architecture</li>
+            <li>Player statistics framework</li>
+            <li>Role-playing mechanics integration</li>
+        </ul>
+    </section>
+
+  
+    <section class="project-description">
+        <p>
+            My role for the Feel No Evil Prototype expanded over time. I was responsible 
+            for all player-character mechanics and for integrating systems developed 
+            by other programmers into a cohesive architecture.
+        </p>
+
+        <p>
+            I designed a modular weapon system that allowed new weapon types to be added 
+            seamlessly as the project evolved. I built the axe combat flow, implemented 
+            player statistics, and ensured tight integration between combat systems and 
+            the game's role-playing mechanics.
+        </p>
+
+        <p>
+            The prototype later transitioned into a more substantial Alpha stage, where 
+            these foundational systems supported expanded development.
+        </p>
+    </section>
+
+</div>
+
+</body>
+</html>
