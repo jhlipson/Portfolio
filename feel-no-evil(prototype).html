@@ -80,6 +80,24 @@ body {
     font-size: 1.05rem;
     color: #ddd;
 }
+.project-video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.project-video-grid img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+}
+
+.project-video-grid img:hover {
+    transform: scale(1.02);
+}
 
 /* ===== Subtle Hover Effect on Video ===== */
 .project-hero video:hover {
@@ -101,17 +119,18 @@ body {
 
 <div class="project-page">
 
- 
-    <section class="project-hero">
-        <a href="index.html">
-        <h1>Feel No Evil – Prototype</h1>
-        </a>
+ <section class="project-hero">
+    <a href="index.html">
+        <h1>Feel No Evil – Prototype (December 2025)</h1>
+    </a>
+
+    <!-- Video wrapped in download link -->
+    <a href="Zips/Feel No Evil(Prototype).zip" download>
         <video autoplay muted loop playsinline>
             <source src="videos/Feel No Evil Promo.mp4" type="video/mp4">
         </video>
-    </section>
-
-    
+    </a>
+</section>
     <section class="project-role">
         <h3>Role: Programming Lead</h3>
         <ul>
@@ -141,6 +160,25 @@ body {
             The prototype later transitioned into a more substantial Alpha stage, where 
             these foundational systems supported expanded development.
         </p>
+        
+<section class="project-video-grid">
+    <img src="Images/FNE 1.png" alt="Gameplay Screenshot 1">
+    <img src="Images/FNE 2.png" alt="Gameplay Screenshot 2">
+    <img src="Images/FNE 3.png" alt="Gameplay Screenshot 3">
+</section>
+
+        <p style="margin-top: 2rem;">
+    <a href="Zips/Feel No Evil(Prototype).zip" download 
+       style="display:inline-block;
+              padding:12px 20px;
+              background:#ffffff;
+              color:#111;
+              border-radius:8px;
+              text-decoration:none;
+              font-weight:bold;">
+        Download Prototype (.zip)
+    </a>
+</p>
     </section>
 
 </div>

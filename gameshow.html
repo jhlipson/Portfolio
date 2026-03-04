@@ -1,73 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gameshow Platformer | Joshua Lipson</title>
-    <link rel="stylesheet" href="CSS/Style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gameshow Platformer</title>
+
+<style>
+
+/* ===== Base Reset ===== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #111;
+    color: #f5f5f5;
+    line-height: 1.6;
+}
+
+/* ===== Layout Container ===== */
+.project-page {
+    max-width: 1100px;
+    margin: auto;
+    padding: 2rem 1.5rem 4rem;
+}
+
+/* ===== Hero Section ===== */
+.project-hero {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.project-hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.project-hero video {
+    width: 100%;
+    max-height: 550px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+/* ===== Role Section ===== */
+.project-role {
+    background: #1c1c1c;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.project-role h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.project-role ul {
+    padding-left: 1.2rem;
+}
+
+.project-role li {
+    margin-bottom: 0.5rem;
+}
+
+/* ===== Secondary Video Grid ===== */
+.project-video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.project-video-grid img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+}
+
+.project-video-grid img:hover {
+    transform: scale(1.02);
+}
+/* ===== Description ===== */
+.project-description {
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 12px;
+    font-size: 1.05rem;
+    color: #ddd;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .project-hero h1 {
+        font-size: 2rem;
+    }
+}
+
+</style>
 </head>
 
 <body>
 
-<main class="project-page">
+<div class="project-page">
 
-    <header class="project-header">
-        <h1>Gameshow Platformer</h1>
-        <p>Fast-paced platformer framed as a chaotic game show</p>
-    </header>
-
-    <!-- HERO VIDEO -->
+    <!-- HERO -->
     <section class="project-hero">
+        <a href="index.html">
+            <h1>Gameshow Platformer(February 2025)</h1>
+        </a>
+        <a href="zips/Gameshow.zip" download>
         <video autoplay muted loop playsinline>
-            <source src="../videos/gameshow-hero.mp4" type="video/mp4">
+            <source src="Videos/Obstacle Course Gameplay.mp4" type="video/mp4">
         </video>
+        </a>
     </section>
 
-    <!-- SECONDARY VIDEOS -->
-    <section class="project-video-grid">
-        <video autoplay muted loop playsinline>
-            <source src="../videos/gameshow-clip-1.mp4" type="video/mp4">
-        </video>
-
-        <video autoplay muted loop playsinline>
-            <source src="../videos/gameshow-clip-2.mp4" type="video/mp4">
-        </video>
-
-        <video autoplay muted loop playsinline>
-            <source src="../videos/gameshow-clip-3.mp4" type="video/mp4">
-        </video>
+    <!-- ROLE (Matches Feel No Evil Format) -->
+    <section class="project-role">
+        <h3>Role: Solo Developer</h3>
+        <ul>
+            <li>Gameplay systems design</li>
+            <li>Dynamic difficulty escalation</li>
+            <li>Camera behavior and player feedback</li>
+            <li>Timing-based platforming mechanics</li>
+        </ul>
     </section>
 
-    <!-- INFO GRID -->
-    <section class="project-info">
-        <div>
-            <h3>Role</h3>
-            <p>Solo Developer</p>
-        </div>
+<section class="project-video-grid">
+    <img src="Images/Gameshow 1.png" alt="Gameplay Screenshot 1">
+    <img src="Images/Gameshow 2.png" alt="Gameplay Screenshot 2">
+    <img src="Images/Gameshow 3.png" alt="Gameplay Screenshot 3">
+</section>
 
-        <div>
-            <h3>Time</h3>
-            <p>3 Months</p>
-        </div>
-
-        <div>
-            <h3>Engine</h3>
-            <p>Unity</p>
-        </div>
-    </section>
 
     <!-- DESCRIPTION -->
     <section class="project-description">
         <p>
-            Gameshow Platformer is a fast-paced experimental platformer designed around
-            unpredictability, player pressure, and spectacle. The game presents challenges
-            as live “events,” forcing the player to adapt quickly while systems dynamically
-            escalate difficulty. This project focused heavily on moment-to-moment feel,
-            camera behavior, and timing-based mechanics.
+            Gameshow Platformer is a fast-paced experimental platformer built around
+            unpredictability, player pressure, and spectacle. Challenges are framed as
+            live “events,” pushing the player to adapt quickly while systems dynamically
+            escalate difficulty.
         </p>
+
+        <p>
+            The project focused heavily on moment-to-moment responsiveness, camera
+            behavior, and tightly tuned timing-based mechanics to maintain tension
+            and rhythm throughout gameplay.
+        </p>
+
+                <p style="margin-top: 2rem;">
+    <a href="Zips/Gameshow.zip" download 
+       style="display:inline-block;
+              padding:12px 20px;
+              background:#ffffff;
+              color:#111;
+              border-radius:8px;
+              text-decoration:none;
+              font-weight:bold;">
+        Download Prototype (.zip)
+    </a>
+</p>
     </section>
 
-</main>
+</div>
 
 </body>
 </html>
