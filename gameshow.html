@@ -99,11 +99,48 @@ body {
     color: #ddd;
 }
 
+
+    /* ===== Controls Section ===== */
+.project-controls {
+    background: #1c1c1c;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-top: 2rem;
+}
+
+.project-controls h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.controls-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.control-item {
+    background: #151515;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.control-key {
+    font-weight: bold;
+    color: #fff;
+}
+
+.control-action {
+    color: #bbb;
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
     .project-hero h1 {
         font-size: 2rem;
     }
+
 }
 
 </style>
@@ -130,16 +167,16 @@ body {
         <h3>Role: Animator & Sound design</h3>
         <ul>
             <li>Created main character mesh and animations</li>
-            <li>Scripted animations and mesh</li>
+            <li>Scripted animations</li>
             <li>Created scripts to handle sound design</li>
         </ul>
     </section>
-
-<section class="project-video-grid">
+        <section class="project-video-grid">
     <img src="Images/Gameshow 1.png" alt="Gameplay Screenshot 1">
     <img src="Images/Gameshow 2.png" alt="Gameplay Screenshot 2">
     <img src="Images/Gameshow 3.png" alt="Gameplay Screenshot 3">
 </section>
+
 
 
     <!-- DESCRIPTION -->
@@ -156,6 +193,30 @@ body {
             behavior, and tightly tuned timing-based mechanics to maintain tension
             and rhythm throughout gameplay.
         </p>
+        </section>
+
+<section class="project-controls">
+    <h3>Controls</h3>
+
+    <div class="controls-grid">
+
+        <div class="control-item">
+            <div class="control-key">W / A / S / D</div>
+            <div class="control-action">Move Character</div>
+        </div>
+
+        <div class="control-item">
+            <div class="control-key">Space</div>
+            <div class="control-action">Jump & double jump</div>
+        </div>
+        
+        <div class="control-item">
+            <div class="control-key">Shift</div>
+            <div class="control-action">Dash</div>
+        </div>
+
+
+    </div>
 
                 <p style="margin-top: 2rem;">
 <a href="https://drive.google.com/uc?export=download&id=1GGeDu-9RTrvli_0IZmmml_5rGP6Fwnf1"
@@ -166,7 +227,7 @@ body {
           border-radius:8px;
           text-decoration:none;
           font-weight:bold;">
-    Download Prototype (.zip)
+    Download  (.zip)
 </a>
     </section>
 

@@ -65,7 +65,49 @@ body {
     background:#1a1a1a;
     padding:2rem;
     border-radius:12px;
+    
 }
+    .project-controls {
+    background: #1c1c1c;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-top: 2rem;
+}
+
+.project-controls h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.controls-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.control-item {
+    background: #151515;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.control-key {
+    font-weight: bold;
+    color: #fff;
+}
+
+.control-action {
+    color: #bbb;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .project-hero h1 {
+        font-size: 2rem;
+    }
+}
+
 </style>
 </head>
 
@@ -110,6 +152,34 @@ timing challenges, and environmental hazards.
 The project explored how level design and movement mechanics interact to
 create fast-paced gameplay challenges.
 </p>
+<section class="project-controls">
+    <h3>Controls</h3>
+
+    <div class="controls-grid">
+
+        <div class="control-item">
+            <div class="control-key">W / A / S / D</div>
+            <div class="control-action">Move Character</div>
+        </div>
+          <div class="control-item">
+                <div class="control-key">Mouse</div>
+                <div class="control-action">Camera control</div>
+            </div>
+        <div class="control-item">
+            <div class="control-key">Space</div>
+            <div class="control-action">Jump & double jump</div>
+        </div>
+        
+        <div class="control-item">
+            <div class="control-key">Shift</div>
+            <div class="control-action">Dash</div>
+        </div>
+
+
+    </div>
+
+
+    </section>
 
 <p style="margin-top:2rem;">
 <a href="https://drive.google.com/uc?export=download&id=1uP8CTKaIG5_Rj8bLBmH22p6P_WlRkZex"

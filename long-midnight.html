@@ -99,6 +99,41 @@ body {
     color: #ddd;
 }
 
+.project-controls {
+    background: #1c1c1c;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-top: 2rem;
+}
+
+.project-controls h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.controls-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.control-item {
+    background: #151515;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.control-key {
+    font-weight: bold;
+    color: #fff;
+}
+
+.control-action {
+    color: #bbb;
+}
+
+/* ===== Responsive ===== */
 @media (max-width: 768px) {
     .project-hero h1 {
         font-size: 2rem;
@@ -127,11 +162,12 @@ body {
 
     <!-- ROLE -->
     <section class="project-role">
-        <h3>Role: Gameplay Programming</h3>
+        <h3>Role: Gameplay Programming & Game Designer</h3>
         <ul>
-            <li>Designed and implemented core player mechanics</li>
-            <li>Developed enemy behavior and AI systems</li>
-            <li>Integrated combat and environmental interaction systems</li>
+            <li>All programming and game design for "I Ate Mondays" sequence</li>
+            <li>Creation of boss mesh and boss textures</li>
+            <li>Developed enemy behavior and AI systems for Garfunkle</li>
+            <li>Created audio manager for the project</li>
         </ul>
     </section>
 
@@ -161,6 +197,32 @@ body {
             Systems were designed to be modular, allowing mechanics such as combat,
             exploration, and progression to evolve as the prototype expanded.
         </p>
+
+        
+<section class="project-controls">
+    <h3>Controls</h3>
+
+    <div class="controls-grid">
+
+        <div class="control-item">
+            <div class="control-key">W / A / S / D</div>
+            <div class="control-action">Move Character</div>
+        </div>
+            <div class="control-item">
+                <div class="control-key">Mouse</div>
+                <div class="control-action">Camera control</div>
+            </div>
+            <div class="control-item">
+        <div class="control-key">E</div>
+        <div class="control-action">interact</div>
+        </div>
+
+
+
+    </div>
+
+
+    </section>
 
         <p style="margin-top: 2rem;">
             <a href="https://drive.google.com/uc?export=download&id=12KwGAinicF7A7ZnPUTvPgwK9qVUzsk68"

@@ -105,11 +105,48 @@ body {
     transition: 0.4s ease;
 }
 
+    /* ===== Controls Section ===== */
+.project-controls {
+    background: #1c1c1c;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-top: 2rem;
+}
+
+.project-controls h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.controls-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.control-item {
+    background: #151515;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.control-key {
+    font-weight: bold;
+    color: #fff;
+}
+
+.control-action {
+    color: #bbb;
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
     .project-hero h1 {
         font-size: 2rem;
     }
+
+
 }
 
 </style>
@@ -133,7 +170,7 @@ body {
     </a>
 </section>
     <section class="project-role">
-        <h3>Role: Programming Lead</h3>
+        <h3>Role: Programming Lead & Game Designer</h3>
         <ul>
             <li>Character movement systems</li>
             <li>Modular weapon architecture</li>
@@ -142,7 +179,12 @@ body {
         </ul>
     </section>
 
-  
+          
+<section class="project-video-grid">
+    <img src="Images/FNE 1.png" alt="Gameplay Screenshot 1">
+    <img src="Images/FNE 2.png" alt="Gameplay Screenshot 2">
+    <img src="Images/FNE 3.png" alt="Gameplay Screenshot 3">
+</section>
     <section class="project-description">
         <p>
             My role for the Feel No Evil Prototype expanded over time. I was responsible 
@@ -161,11 +203,34 @@ body {
             The prototype later transitioned into a more substantial Alpha stage, where 
             these foundational systems supported expanded development.
         </p>
-        
-<section class="project-video-grid">
-    <img src="Images/FNE 1.png" alt="Gameplay Screenshot 1">
-    <img src="Images/FNE 2.png" alt="Gameplay Screenshot 2">
-    <img src="Images/FNE 3.png" alt="Gameplay Screenshot 3">
+
+<section class="project-controls">
+    <h3>Controls</h3>
+
+    <div class="controls-grid">
+
+        <div class="control-item">
+            <div class="control-key">W / A / S / D</div>
+            <div class="control-action">Move Character</div>
+        </div>
+
+        <div class="control-item">
+            <div class="control-key">Mouse</div>
+            <div class="control-action">Drag and Drop Items</div>
+        </div>
+
+        <div class="control-item">
+            <div class="control-key">Left Click</div>
+            <div class="control-action">Primary Attack</div>
+        </div>
+
+        <div class="control-item">
+            <div class="control-key">Shift</div>
+            <div class="control-action">Sprint</div>
+        </div>
+
+
+    </div>
 </section>
 
         <p style="margin-top: 2rem;">
