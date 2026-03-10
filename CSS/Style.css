@@ -70,45 +70,50 @@ section {
 /* ========== Projects Grid ========== */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.2rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
     margin-top: 1.5rem;
 }
 
-/* Project Tile */
+/* Project Tile Container */
 .project-tile {
-    position: relative;
-    display: block;
-    overflow: hidden;
-    border-radius: 10px;
-    aspect-ratio: 16 / 9;
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
-}
-
-/* Smaller / Controlled Video Size */
-.project-tile video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.4s ease;
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 /* Hover Effect */
-.project-tile:hover video {
-    transform: scale(1.05);
+.project-tile:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
 }
 
-/* Title Overlay */
+/* Video Frame */
+.project-tile iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+    pointer-events: none; /* keeps tile clickable */
+}
+
+/* Title Area Under Video */
 .project-title {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 0.6rem;
-    background: linear-gradient(to top, rgba(0,0,0,0.75), transparent);
-    color: white;
-    font-size: 0.9rem;
+    padding: 0.8rem;
+    text-align: center;
+    font-size: 0.95rem;
     font-weight: 500;
+    color: #222;
+    background: #f3f3f3;
+    transition: background 0.25s ease;
+}
+
+/* Title Hover */
+.project-tile:hover .project-title {
+    background: #e5e5e5;
 }
 
 /* ========== Footer ========== */
